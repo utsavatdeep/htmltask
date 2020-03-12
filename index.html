@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Utsav Shop</title>
+	<link rel="stylesheet" href="./assets/bootstrap.min.css">
+</head>
+
+<body>
+	<!-- As a link -->
+
+	<nav class="navbar navbar-light bg-light">
+		<a class="navbar-brand" href="#">
+			<img src="./assets/Amazon logo.png" width="130" height="50" class="d-inline-block align-top" alt="">
+		</a>
+		<ul class="nav justify-content-end">
+			<li class="nav-item">
+				<a class="nav-link active" href="./about.html">About Moto G6</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" href="./compare.html">Compare Phones</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">New Member Profile</h5>
+						<hr>
+						<!-- main form content -->
+						<form method="post">
+							<div class="form-group">
+								<label for="nameInputBox">Your full name</label>
+								<input type="text" id="nameInputBox" required="true" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label for="usernameInput">Desired Username</label>
+								<input type="text" id="usernameInput" required="true" class="form-control" />
+							</div>
+							<div class="form-group">
+								<label for="emailIdInput">Email Id</label>
+								<input type="email" id="emailIdInput" required="true" class="form-control" />
+							</div>
+							<!-- radio boxes -->
+							<div class="custom-control custom-radio custom-control-inline">
+								<input type="radio" id="radioButton1" name="modelSelectionRadio"
+									class="custom-control-input">
+								<label class="custom-control-label" for="radioButton1">Moto G6</label>
+							</div>
+							<div class="custom-control custom-radio custom-control-inline">
+								<input type="radio" id="radioButton2" name="modelSelectionRadio"
+									class="custom-control-input">
+								<label class="custom-control-label" for="radioButton2">Redimi Note 8</label>
+							</div>
+							<!-- radio boxes -->
+							<hr />
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input" id="checkBoxInput">
+								<label class="custom-control-label" for="checkBoxInput">I am a reseller</label>
+							</div>
+							<hr />
+							<div class="form-group">
+								<label for="textAreaInput">Why is my business apt to sell phones</label>
+								<textarea class="form-control" id="textAreaInput" rows="3"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="dateInputBox">Enter expected delivery date</label>
+								<input type="date" required="true" id="dateInputBox" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="inputState">Enter Delivery Location</label>
+								<select id="inputState" class="form-control">
+									<option value="vellore" selected>Vellore</option>
+									<option value="chennai">Chennai</option>
+									<option value="mumbai">Mumbai</option>
+									<option value="delhi">Delhi</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<br>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+						</form>
+						<!-- main form content ends -->
+					</div>
+				</div>
+			</div>
+			<div class=" col-md-1"></div>
+		</div>
+	</div>
+
+</body>
+<script src="./assets/jquery.min.js"></script>
+<script src="./assets/bootstrap.min.js"></script>
+
+</html>
